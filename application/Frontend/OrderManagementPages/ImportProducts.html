@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Import Products</title>
+    <!-- Link to the website's favicon -->
+    <link rel="icon" type="image/x-icon" href="img/favicon2.png">
+    <!-- Link to the external stylesheet for styling -->
+    <link rel="stylesheet" href="css/ImportProducts.css">
+    <!-- Link to the external JavaScript file for functionality -->
+    <script src="js/ImportProduct.js"></script>
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <h1>Import Products</h1>
+    </header>
+    <!-- Navigation menu with links to other pages -->
+    <nav>
+        <ul>
+            <li><a href="../HomePage/HomePage.html">Home</a></li>
+            <li><a href="../HomePage/AboutUs.html">About Us</a></li>
+            <li><a href="../HomePage/OurCollection.html">Our Collections</a></li>
+            <li><a href="../HomePage/ContactUs.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content container -->
+    <div class="container">
+        <!-- Input field for selecting a file -->
+        <input type="file" id="fileInput" accept=".json, .xml" required>
+        <!-- Button to trigger the importProducts() function -->
+        <button onclick="importProducts()">Upload</button>
+        <!-- Container to display import status -->
+        <div id="importStatus"></div>
+    </div>
+
+    <!-- Footer section with copyright notice -->
+    <footer>
+        &copy; 2023 ForeverTogether.com. All rights reserved.
+    </footer>
+</body>
+</html>

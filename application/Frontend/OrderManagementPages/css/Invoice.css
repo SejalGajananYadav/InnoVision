@@ -1,0 +1,46 @@
+/* Setting the base font family for the entire page */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for the main content container */
+.container {
+    max-width: 800px; /* Maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding inside the container */
+    border: 1px solid #ccc; /* Add a 1px solid border with a light gray color */
+    border-radius: 10px; /* Rounded corners for the container */
+    background-color: #fff; /* White background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle depth effect */
+}
+
+/* Styling for the main heading (h1) */
+h1 {
+    text-align: center; /* Center-align the heading */
+    color: #333; /* Text color (dark gray) */
+}
+
+/* Styling for tables */
+table {
+    width: 100%; /* Make the table occupy the entire width of its container */
+    border-collapse: collapse; /* Collapse borders between table cells */
+    margin-top: 20px; /* Add margin space above the table */
+}
+
+/* Styling for table headers (th) and table data cells (td) */
+th, td {
+    padding: 10px; /* Add padding inside table cells */
+    border: 1px solid #ccc; /* Add a 1px solid border with a light gray color to table cells */
+    text-align: left; /* Left-align text within table cells */
+}
+
+/* Styling for table headers (th) */
+th {
+    background-color: #f2f2f2; /* Light gray background color for table headers */
+}
+
+/* Styling for the "Total" row in the table */
+.total {
+    font-weight: bold; /* Apply bold font-weight to the "Total" row */
+    text-align: right; /* Right-align text within the "Total" row */
+}
