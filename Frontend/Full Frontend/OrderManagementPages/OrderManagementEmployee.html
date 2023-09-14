@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Management (Server Side)</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon2.png">
+    <link rel="stylesheet" href="css/OrderManagementEmployee.css">
+</head>
+<body>
+    <header>
+        <h1>Employee Order Management Page</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../HomePage/HomePage.html">Home</a></li>
+            <li><a href="../HomePage/AboutUs.html">About Us</a></li>
+            <li><a href="../HomePage/OurCollection.html">Our Collections</a></li>
+            <li><a href="../HomePage/ContactUs.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="employee-info">
+            <!-- Employee information will be displayed here -->
+            <p>Employee ID: 12345</p>
+            <p>Last Logged-in: 2023-09-15 10:30 AM</p>
+        </div>
+
+        <h2>List of Orders</h2>
+        <div class="order-list" id="order-list">
+            <!-- JavaScript will populate this section -->
+        </div>
+
+        <div class="action-links">
+            <a href="NewQuote.html">Create a New Quote</a>
+            <a href="ImportProducts.html">Import Products</a>
+        </div>
+    </div>
+
+    <script>
+        // Imaginary dataset for orders
+        const orders = [
+            { id: 1, customerName: "Customer A", orderDate: "2023-09-15", orderValue: 100.0, customerCity: "City A", status: "approved" },
+            { id: 2, customerName: "Customer B", orderDate: "2023-09-12", orderValue: 90.0, customerCity: "City B", status: "completed" },
+            // Add more orders as needed
+        ];
+
+        // Function to display orders
+        function displayOrders() {
+            const orderList = document.getElementById("order-list");
+
+            // Clear the container first
+            orderList.innerHTML = "";
+
+            // Populate the container with order items
+            orders.forEach(order => {
+                const orderItem = document.createElement("div");
+                orderItem.classList.add("order-item");
+                orderItem.innerHTML = `
+                    <p>Order ID: ${order.id}</p>
+                    <p>Customer Name: ${order.customerName}</p>
+                    <p>Order Date: ${order.orderDate}</p>
+                    <p>Order Value: $${order.orderValue.toFixed(2)}</p>
+                    <p>Customer City: ${order.customerCity}</p>
+                    <p>Status: ${order.status}</p>
+                    ${order.status === "approved" || order.status === "completed" ?
+                        `<button class="invoice-btn" onclick="showInvoice(${order.id})">View Invoice</button>` : ""}
+                `;
+                orderList.appendChild(orderItem);
+            });
+        }
+
+        // Function to show invoice
+        function showInvoice(orderId) {
+            const orderToShow = orders.find(order => order.id === orderId);
+            if (orderToShow) {
+                window.open(`invoice.html?order=${orderId}&status=${status}`, '_blank');
+            }
+        }
+
+        // Initial display of orders
+        displayOrders();
+    </script>
+
+    <footer>
+        &copy; 2023 ForeverTogether.com. All rights reserved.
+    </footer>
+</body>
+</html>

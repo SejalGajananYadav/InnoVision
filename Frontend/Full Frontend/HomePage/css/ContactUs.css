@@ -1,0 +1,115 @@
+/* Set the default font family and background color for the entire page */
+body {
+    font-family: Arial, sans-serif; /* Use Arial or sans-serif font */
+    background-color: #f6f6f6; /* Set a light gray background color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Style the header with a dark background, white text, padding, and centered content */
+.header {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 20px; /* Add padding around header content */
+    text-align: center; /* Center-align text within the header */
+}
+
+/* Style the main content container with a maximum width, padding, white background, and box shadow */
+.container {
+    max-width: 1200px; /* Set maximum container width */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding to the container */
+    background-color: #fff; /* White background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+/* Style the contact-info section with padding and left-aligned text */
+.contact-info {
+    padding: 20px; /* Add padding around the content in the contact-info section */
+    text-align: left; /* Left-align text within the section */
+}
+
+/* Style the heading in the contact-info section with a specific color, font size, and margin */
+.contact-info h2 {
+    color: #333; /* Set heading text color */
+    font-size: 24px; /* Set heading font size */
+    margin-bottom: 20px; /* Add margin at the bottom of the heading */
+}
+
+/* Style paragraphs in the contact-info section with font size, line height, and color */
+.contact-info p {
+    font-size: 16px; /* Set paragraph font size */
+    line-height: 1.6; /* Set line height for better readability */
+    color: #555; /* Set paragraph text color */
+}
+
+/* Style the contact-form section with padding and left-aligned text */
+.contact-form {
+    padding: 20px; /* Add padding around the content in the contact-form section */
+    text-align: left; /* Left-align text within the section */
+}
+
+/* Style the heading in the contact-form section with a specific color, font size, and margin */
+.contact-form h2 {
+    color: #333; /* Set heading text color */
+    font-size: 24px; /* Set heading font size */
+    margin-bottom: 20px; /* Add margin at the bottom of the heading */
+}
+
+/* Style paragraphs in the contact-form section with font size, line height, and color */
+.contact-form p {
+    font-size: 16px; /* Set paragraph font size */
+    line-height: 1.6; /* Set line height for better readability */
+    color: #555; /* Set paragraph text color */
+}
+
+/* Style the footer with a dark background, white text, padding, and center alignment */
+footer {
+    background-color: #333; /* Dark background color for the footer */
+    color: #fff; /* White text color */
+    text-align: center; /* Center-align text within the footer */
+    padding: 10px; /* Add padding around the footer content */
+}
+
+/* Style form groups within the contact-form section with margin */
+.contact-form .form-group {
+    margin-bottom: 20px; /* Add margin at the bottom of each form group */
+}
+
+/* Style labels within the contact-form section as block elements with bold font weight */
+.contact-form label {
+    display: block; /* Display labels as block elements */
+    font-weight: bold; /* Set bold font weight for labels */
+}
+
+/* Style text inputs, email inputs, and textareas within the contact-form section with common properties */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%; /* Make inputs and textarea full width */
+    padding: 10px; /* Add padding inside inputs and textarea */
+    border: 1px solid #ccc; /* Add a 1px border with a light gray color */
+    border-radius: 4px; /* Add a slight border radius for rounded corners */
+    font-size: 16px; /* Set font size for inputs and textarea */
+}
+
+/* Style the textarea within the contact-form section with the ability to resize vertically */
+.contact-form textarea {
+    resize: vertical; /* Allow vertical resizing of the textarea */
+}
+
+/* Style the submit button within the contact-form section with background color, text color, padding, border, border radius, cursor, and font size */
+.contact-form button {
+    background-color: #333; /* Dark background color for the button */
+    color: #fff; /* White text color for the button */
+    padding: 10px 20px; /* Add padding inside the button */
+    border: none; /* Remove default */
+    border-radius: 4px; /* Add a slight border radius for rounded corners */
+    cursor: pointer; /* Set cursor to pointer on hover */
+    font-size: 18px; /* Set font size for the button */
+}
+
+/* Style the submit button on hover with a darker background color */
+.contact-form button:hover {
+    background-color: #555; /* Darker background color on hover */
+}

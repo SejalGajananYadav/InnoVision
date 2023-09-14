@@ -1,0 +1,27 @@
+{
+    "weddingDress": {
+        "name": "Elegant Wedding Dress",
+        "category": "Bridal Gown",
+        "price": 1500
+    },
+    "tuxedo": {
+        "name": "Classic Black Tuxedo",
+        "category": "Men's Formal Wear",
+        "price": 1000
+    },
+    "bridesmaidDress": {
+        "name": "Bridesmaid Dress",
+        "category": "Bridal Party",
+        "price": 800
+    },
+    "weddingVeil": {
+        "name": "Lace Wedding Veil",
+        "category": "Accessories",
+        "price": 250
+    },
+    "groomSuit": {
+        "name": "Groom's Suit",
+        "category": "Men's Formal Wear",
+        "price": 1200
+    }
+}
