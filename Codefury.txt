@@ -1,0 +1,42 @@
+Now we will create a order management page for customers which will be displayed when their login is successful
+
+The screen allows to view and approve quotes for that customer. The orders and invoices are also displayed.
+
+So a list of quotes which are pending for approval is shown.
+Each item shows the Order id, Date, shipping cost and total order value. 
+Also on clicking an item, a detailed view of the quote should be displayed on the next screen. 
+Each item should have an Approve button. Clicking on the button should convert it from quote to order.
+
+Next part of the page has a list of orders which are already approved or orders which are completed.
+Each item shows the Order id, Date, shipping cost and total order value, status.
+Each item will have a show Invoice button. This button click will display the invoice containing price and everything relevant.
+
+
+Order Management Page for server side
+The screen displays:
+1)The employee information, Id, last logged-in details
+2) A list of orders - Each item should display Order id, Customer Name, Order date, Order Value, Customer City, status
+For approved and completed orders a View invoice Button should be displayed which should display a invoice in form of alert onclick.
+
+Then in the next part of the page there should be a link to 'create a new Quote' and a second link to 'import Products'.
+
+Please do this much then I will explain the specifics of new Quote link and import Products link
+
+
+
+Import Products
+This screen should provide a user interface to choose a JSON/XML file and upload it to the server. 
+The JSON file will be an array of products where each product should have a product id, name and category(1,2 or 3).
+The uploaded JSON/XML file should be validated and the data saved to the database.
+After the uploading is done the user should be shown a status(completed/failed) and number of products imported.
+
+Create New Quote
+The screen allows the user to create a new quote for potential customers.
+Quotes are orders with the status as pending for approval by customer.
+
+The fields to capture are:
+ Order date, Customer Name/Id, Customer GST Number, shipping address, City, phone number, email, pin code,shipping cost and total order value and a UI to select and add products.
+The user can either enter customer name or id, if the customer name or id already exists then rest of data should be auto populated.
+Please note that the shipping cost and Total order value must be autocalculated. Take a random formula for this. 
+
+After creating a quote, the user should remain on the same page to create a new quote and the form should be cleared. A link should be provided to go to previous page which is Order Management Page for server side which we made earlier.
