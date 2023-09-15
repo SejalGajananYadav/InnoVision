@@ -11,14 +11,15 @@
 - Application Description
 - Installing and Running Requirements
 - UML Diagrams
-- UI Snapshots
+- Sample UI Snapshots
 - Instructions to Execute Frontend
 - Instructions to Execute Backend
 
 --------------------------------------------------------------------------------------------------------------
 ### Application Description
-Orders processing happens between a distributor and a company.
-Distributor runs a wedding clothes shop and is the customer/client of the company.
+
+We have taken our product as 'Wedding Clothes' as not only that provides a variety and fits well with the statement, it also provides us a chance to make a good front-end.
+Distributor runs a wedding clothes shop and is the customer/client of the company. Orders processing happens between a distributor and a company.
 
 Step1 - Create Quote page for employee - A quote is a list of prices that are proposed by company to distributor. So employee will create a quote for distributor to approve.
 
@@ -29,36 +30,29 @@ Order Management page for employee is also there but it will just have his/her l
 
 --------------------------------------------------------------------------------------------------------------
 ### Installing and Running Requirements
-Orders processing happens between a distributor and a company.
-Distributor runs a wedding clothes shop and is the customer/client of the company.
 
-Step1 - Create Quote page for employee - A quote is a list of prices that are proposed by company to distributor. So employee will create a quote for distributor to approve.
+##### Installation 
+No installations as such are required to run the front end code except for a browser, spring suite 4 or any other java ide can be used to run the backend code.
 
-Step 2 - Order Management page for distributor - He can approve this quote created by the employee here.
-
-Step 3 - Import Products - Based on what Quotes have been approved by the distributor, the employee will import products that were there in the list. This is in json/xml format.
+#### Running
+Remember to run a live server on port of your choice through the browser for locally running the application frontend. Backend can be run inside the IDE itself.
 
 --------------------------------------------------------------------------------------------------------------
 ### UML Diagrams
-Orders processing happens between a distributor and a company.
-Distributor runs a wedding clothes shop and is the customer/client of the company.
 
-Step1 - Create Quote page for employee - A quote is a list of prices that are proposed by company to distributor. So employee will create a quote for distributor to approve.
+![image](https://github.com/SejalGajananYadav/InnoVision/assets/108066950/260c5882-9d4c-47d4-9f99-2333d95fe284)
 
-Step 2 - Order Management page for distributor - He can approve this quote created by the employee here.
+![image](https://github.com/SejalGajananYadav/InnoVision/assets/108066950/a004279a-9c7c-498e-9429-09c64b227263)
 
-Step 3 - Import Products - Based on what Quotes have been approved by the distributor, the employee will import products that were there in the list. This is in json/xml format.
+![image](https://github.com/SejalGajananYadav/InnoVision/assets/108066950/af1b7603-c351-4a7e-999f-bd0545d49af7)
 
 --------------------------------------------------------------------------------------------------------------
-### UI Snapshots
-Orders processing happens between a distributor and a company.
-Distributor runs a wedding clothes shop and is the customer/client of the company.
+### Sample UI Snapshots
 
-Step1 - Create Quote page for employee - A quote is a list of prices that are proposed by company to distributor. So employee will create a quote for distributor to approve.
+![image](https://github.com/SejalGajananYadav/InnoVision/assets/108066950/08f32c5e-4965-4e4f-8f48-8671585f4e44)
 
-Step 2 - Order Management page for distributor - He can approve this quote created by the employee here.
+![image](https://github.com/SejalGajananYadav/InnoVision/assets/108066950/182d0622-acf6-4f83-9f6e-e231ad1d29d8)
 
-Step 3 - Import Products - Based on what Quotes have been approved by the distributor, the employee will import products that were there in the list. This is in json/xml format.
 
 --------------------------------------------------------------------------------------------------------------
 ### Instructions to Execute Frontend
@@ -69,12 +63,11 @@ Instructions to execute frontend working:
 4) Alternatively if you are an employee pass the Id and password for the same.
 5) Employee functions : employee can create the quotes with order status pending and he can also import products
 6) The list of the pending orders will be displayed to employee and then employee will select the orders to create quote
-7) Then that quote will be saved to database
-8) Customer functions: he can login by Id or username and password
-9) Customer is able to review the pending orders and can place the new order
-10) While reviewing the pending orders customer can approve that orders and generate the invoice that changes will reflect to database
-11) While placing the new order the customer is able to select various products of any quantity and according to that the shipping cost total order value is calculated
-12) After selecting the product customer is asked to approve the order if yes then order status will be approved or else it will be pending.
+7) Customer after login also sees his side of Order Management Screen.
+8) Customer is able to review the pending orders and can place the new order
+9) While reviewing the pending orders customer can approve that orders and generate the invoice that changes will reflect to database
+10) While placing the new order the customer is able to select various products of any quantity and according to that the shipping cost total order value is calculated
+11) After selecting the product customer is asked to approve the order if yes then order status will be approved or else it will be pending.
 
 --------------------------------------------------------------------------------------------------------------
 ### Instructions to Execute Backend
